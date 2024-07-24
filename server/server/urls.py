@@ -16,10 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-import audio.urls
-
+import audiobook.urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('audio/',include(audio.urls))
+    path('api/audiobook/',include(audiobook.urls))
 ]
